@@ -3,12 +3,18 @@ public class Reloj
     private int horas;
     private int minutos;
     
-    public Reloj(int HoraIni,int MinIni)
+    /**El constructor inicializa las horas y minutos con los parametros que nosotros asignamos
+     * @param horas
+     * @param minutos
+     */
+    public Reloj(int horas,int minutos)
     {
-        horas=HoraIni;
-        minutos=MinIni;
+        this.horas=horas;
+        this.minutos=minutos;
     }
-    
+    /**Nos permite conocer nuestro tiempo actual
+       *@return Regresa un string que muestra la hora y los minutos definidos
+       */
     public String tuTiempo()
     {
         String cadResultado="";
@@ -18,7 +24,7 @@ public class Reloj
         
         return cadResultado;
     }
-    
+    /**Incrementa en un minuto nuestro Tiempo actual*/
     public void ticTac()
     {
         minutos +=1;
